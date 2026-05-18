@@ -473,63 +473,63 @@ class FAQRoleView(discord.ui.View):
                 ephemeral=True,
             )
 
-                @discord.ui.button(label="Match Ping", style=discord.ButtonStyle.blurple)
-    async def stream_watcher(
+    @discord.ui.button(label="Match Ping", style=discord.ButtonStyle.blurple)
+    async def match_ping_button(
         self,
         interaction: discord.Interaction,
         button: discord.ui.Button,
     ):
         await self._toggle_role(
             interaction,
-            STREAM_WATCHER_ROLE_ID,
+            MATCH_PING_ROLE_ID,
             "Match Ping",
         )
 
-        @discord.ui.button(label="Scrim Ping", style=discord.ButtonStyle.blurple)
-    async def stream_watcher(
+    @discord.ui.button(label="Scrim Ping", style=discord.ButtonStyle.blurple)
+    async def scrim_ping_button(
         self,
         interaction: discord.Interaction,
         button: discord.ui.Button,
     ):
         await self._toggle_role(
             interaction,
-            STREAM_WATCHER_ROLE_ID,
+            SCRIM_PING_ROLE_ID,
             "Scrim Ping",
         )
 
     @discord.ui.button(label="Unofficial Commentator", style=discord.ButtonStyle.blurple)
-    async def stream_watcher(
+    async def unofficial_commentator_button(
         self,
         interaction: discord.Interaction,
         button: discord.ui.Button,
     ):
         await self._toggle_role(
             interaction,
-            STREAM_WATCHER_ROLE_ID,
+            UNOFFICIAL_COMMENTATOR_ROLE_ID,
             "Unofficial Commentator",
         )
 
     @discord.ui.button(label="Unofficial Referee", style=discord.ButtonStyle.blurple)
-    async def unborn_captain(
+    async def unofficial_referee_button(
         self,
         interaction: discord.Interaction,
         button: discord.ui.Button,
     ):
         await self._toggle_role(
             interaction,
-            UNBORN_CAPTAIN_ROLE_ID,
+            UNOFFICIAL_REFEREE_ROLE_ID,
             "Unofficial Referee",
         )
 
     @discord.ui.button(label="Unofficial Caster", style=discord.ButtonStyle.blurple)
-    async def event_ping(
+    async def unofficial_caster_button(
         self,
         interaction: discord.Interaction,
         button: discord.ui.Button,
     ):
         await self._toggle_role(
             interaction,
-            EVENT_PING_ROLE_ID,
+            UNOFFICIAL_CASTER_ROLE_ID,
             "Unofficial Caster",
         )
 
