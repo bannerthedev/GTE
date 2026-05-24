@@ -2088,7 +2088,7 @@ async def code(interaction: discord.Interaction, team1: discord.Role, team2: dis
         return
 
     await interaction.response.defer(ephemeral=True)
-    code_value = f"CML{random.randint(1000, 9999)}"
+    code_value = f"GTE{random.randint(1000, 9999)}"
 
     if interaction.channel is None:
         await interaction.followup.send("Cannot determine channel.", ephemeral=True)
